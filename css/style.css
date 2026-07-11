@@ -1,31 +1,70 @@
+/* ==========================
+   Design System
+========================== */
+/* Design System (using root)
+   Stores reusable accent colors here so the whole 
+   website stays consistent and easy to update.
+*/
+:root { 
+    --bg: #08131F;
+    --surface: #11243A;
+    --surface-light: #183552;
+
+    --primary: #4DA3FF;
+    --primary-light: #8AC7FF;
+
+    --text: #F5F7FA;
+    --muted: #A5B7C8;
+
+    --border: #29445F;
+}
+
+/* ==========================
+   Global Styles
+========================== */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  background: #f9f9f9;
-  color: #333;
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+
+    background-color: var(--bg);
+    color: var(--text);
 }
 
 header {
-  background: #24292f;
-  color: #fff;
-  padding: 2rem;
-  text-align: center;
+    background-color: var(--surface);
+    color: var(--text);
+
+    padding: 2rem;
+
+    text-align: center;
 }
 
-h1, h2 {
-  margin: 0.6ren 0;
-}
-
-h1, h2 {
-  padding: 2rem;
+/* ==========================
+   Typography
+========================== */
+h1,
+h2 {
+    margin-bottom: 1rem;
 }
 
 footer {
-  background: #24292f;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top:: 2rem;
+    background-color: var(--surface);
+
+    color: var(--text);
+
+    text-align: center;
+
+    padding: 1rem;
+
+    margin-top: 2rem;
+}
+
+/* ==========================
+   Layout
+========================== */
+section {
+    padding: 80px 10%;
 }

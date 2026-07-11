@@ -34,16 +34,45 @@ body {
 }
 
 header {
-    background-color: var(--surface);
-    color: var(--text);
+    background: rgba(17, 36, 58, 0.85);
 
-    padding: 2rem;
+    backdrop-filter: blur(10px);
 
-    text-align: center;
+    border-bottom: 1px solid var(--border);
+
+    padding: 1rem 5%;
 }
 
 nav {
-   display: flex;
+   display: flex; /*turn the navigation into a flex container */
+
+   justify-content: space-between; /*Center the navigation and distribute the space */
+
+   align-items: center; /*Align everything in the middle */
+}
+
+nav ul {
+    display: flex;
+
+    list-style: none;
+
+    gap: 2rem;
+
+    padding: 0;
+
+    margin: 0;
+}
+
+nav a {
+    color: var(--text);
+
+    text-decoration: none;
+
+    transition: color 0.25s ease;
+}
+
+nav a:hover {
+    color: var(--primary-light);
 }
 
 /* ==========================
@@ -52,14 +81,14 @@ nav {
 h1,
 h2 {
     margin-bottom: 1rem;
+   
+    font-weight: 700;
 }
 
 footer {
     background-color: var(--surface);
 
     color: var(--text);
-
-    text-align: center;
 
     padding: 1rem;
 

@@ -71,13 +71,105 @@ nav a {
     transition: color 0.25s ease;
 }
 
-nav a:hover {
+nav a: hover {
     color: var(--primary-light);
+}
+
+.hero {
+
+   display: flex;
+
+   min-height: 90vh; /* vh = viewport height = % of the visible browser height*/
+
+   align-items: center;
+
+   justify-content: space-between;
+
+   padding: 0 10%;
+
+}
+
+.hero-content {
+
+   width: 60%; /* creting assymmetryy */
+
+}
+
+.hero-atmosphere {
+
+      width: 40%;
+
+      height: 100%;
+
+}
+
+.primary-btn {
+
+   background: var(--primary);
+
+   color: white;
+
+   padding: 12px 28px;
+
+   border-radius: 12px;
+
+   text-decoration: none;
+
+   transition: 0.3s;
+
+}
+
+.primary_btn:hover { /*while curson is hovering on the button*/
+
+   transform: translateY(-3px);
+
 }
 
 /* ==========================
    Typography
 ========================== */
+.hero h1 {
+
+   font-size: 4rem;
+
+   line-height: 1.1;
+
+   margin-bottom: 1rem;
+
+}
+
+.hero-label {
+
+   color: var(--primary);
+
+   letter-spacing: 3px;
+
+   font-size: 0.8rem;
+
+   margin-bottom: 1rem;
+
+}
+
+.hero-description {
+
+   color: var(--muted);
+
+   max-width: 550px; /*avoiding long lines of text */
+
+   font-size: 1.1rem;
+
+}
+
+.hero-buttons {
+
+   display: flex;
+
+   gap: 1rem;
+
+   margin-top: 2rem;
+
+}
+
 h1,
 h2 {
     margin-bottom: 1rem;

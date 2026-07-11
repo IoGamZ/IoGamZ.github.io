@@ -83,21 +83,39 @@ nav a:hover {
 
 .hero-atmosphere {
       flex:2;
-      max-height: 500px;
-      border: 2px dashed var(--primary);
+      max-height: 600px;
+      border-radiuys: 24px;
+      border: 2px dashed rgba(138,199,255,0.15);
 }
 
 .primary-btn {
+   display: inline-block;
    background: var(--primary);
    color: white;
-   padding: 12px 28px;
-   border-radius: 12px;
+   padding: 14px 32px;
+   border-radius: 14px;
    text-decoration: none;
-   transition: 0.3s;
+   font-weight: bold;
+   transition: all 0.3s ease;
 }
 
 .primary-btn:hover { /*while curson is hovering on the button*/
-   transform: translateY(-3px);
+   transform: translateY(-4px);
+   box-shadow: 0 12px 24px rgba(77,163,255,0.3);
+}
+
+.secondary-btn {
+   display: inline-block;
+   color: var(--text);
+   padding: 14px 32px;
+   border-radius: 14px;
+   text-decoration: none;
+   border: 1px solid var(--border);
+   transition: all 0.3s ease;
+
+.primary-btn:hover { 
+   border-color: var(--primary);
+   color: var(--primary-light);
 }
 
 .console-header {
@@ -123,14 +141,16 @@ nav a:hover {
 /* ============================================= */
 
 .hero h1 {
-
    font-size: 4rem;
    line-height: 1.1;
    margin-bottom: 1rem;
 }
 
-.hero-label {
+.hero h1 span {
+   color: var(--primary-light);
+}
 
+.hero-label {
    color: var(--primary);
    letter-spacing: 3px;
    font-size: 0.8rem;
@@ -138,14 +158,12 @@ nav a:hover {
 }
 
 .hero-description {
-
    color: var(--muted);
    max-width: 550px; /*avoiding long lines of text */
    font-size: 1.1rem;
 }
 
 .hero-buttons {
-
    display: flex;
    gap: 1rem;
    margin-top: 2rem;

@@ -93,6 +93,18 @@ nav a:hover {
 
    flex: 3; /* creting assymmetryy */
 
+   background: rgba(17, 36, 58, 0.78); /*red, green, blue, and opacity */
+
+   backdrop-filter: blur(18px); /*blurs the content behind the panel*/
+
+   border: 1px solid rgba(138, 199, 255, 0.15); /*subtle highlight with 1 pixel only*/
+
+   border-radius: 24px;
+
+   padding: 3rem;
+
+   position: relative;   
+
 }
 
 .hero-atmosphere {
